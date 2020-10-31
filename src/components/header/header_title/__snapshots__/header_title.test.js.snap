@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderTitle tests renders correctly 1`] = `
+<Text
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  numberOfLines={1}
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 24,
+        "letterSpacing": 0.6,
+        "lineHeight": 27.5,
+        "textAlign": "left",
+      },
+      undefined,
+      Object {
+        "color": "#2F323D",
+        "fontSize": 41,
+        "fontWeight": "bold",
+        "lineHeight": 55,
+      },
+    ]
+  }
+>
+  forgot_password:title
+</Text>
+`;

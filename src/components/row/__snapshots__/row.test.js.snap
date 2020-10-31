@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row tests renders correctly male 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <View />
+</View>
+`;

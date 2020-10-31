@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image tests renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "borderRadius": undefined,
+        "height": 50,
+        "width": 50,
+      },
+    ]
+  }
+>
+  <FastImageView
+    resizeMode="contain"
+    source={
+      Object {
+        "uri": "https://via.placeholder.com/150",
+      }
+    }
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />
+</View>
+`;

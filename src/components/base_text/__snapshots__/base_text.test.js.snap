@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseText tests renders correctly 1`] = `
+<Text
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  numberOfLines={1}
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 24,
+        "letterSpacing": 0.6,
+        "lineHeight": 27.5,
+        "textAlign": "left",
+      },
+      undefined,
+      undefined,
+    ]
+  }
+>
+  sign_up:link_btn
+</Text>
+`;
+
+exports[`BaseText tests renders correctly when title 1`] = `
+<Text
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  numberOfLines={1}
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 24,
+        "letterSpacing": 0.6,
+        "lineHeight": 27.5,
+        "textAlign": "left",
+      },
+      Object {
+        "fontSize": 31,
+        "fontWeight": "900",
+        "lineHeight": 37.5,
+      },
+      undefined,
+    ]
+  }
+>
+  sign_up:link_btn
+</Text>
+`;
+
+exports[`BaseText tests renders correctly with child 1`] = `
+<Text
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  numberOfLines={1}
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 24,
+        "letterSpacing": 0.6,
+        "lineHeight": 27.5,
+        "textAlign": "left",
+      },
+      undefined,
+      undefined,
+    ]
+  }
+>
+  Test text
+</Text>
+`;

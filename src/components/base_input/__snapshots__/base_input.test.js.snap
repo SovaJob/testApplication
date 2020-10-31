@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseInput tests renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <TextInput
+    allowFontScaling={false}
+    onChangeText={[Function]}
+    placeholder="placeholder"
+    rejectResponderTermination={true}
+    style={
+      Array [
+        Object {
+          "borderColor": "#D7D9E0",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "flex": 1,
+          "fontSize": 24,
+          "height": 68.5,
+          "paddingHorizontal": 24,
+        },
+        undefined,
+        undefined,
+        Object {
+          "borderColor": "#D7D9E0",
+        },
+      ]
+    }
+    underlineColorAndroid="transparent"
+    value="value"
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "flexDirection": "row",
+        "height": 27.5,
+        "justifyContent": "space-between",
+        "marginStart": 24,
+        "paddingHorizontal": 6,
+        "position": "absolute",
+        "top": -13.5,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 24,
+            "letterSpacing": 0.6,
+            "lineHeight": 27.5,
+            "textAlign": "left",
+          },
+          undefined,
+          Object {
+            "color": "#9094A3",
+            "fontSize": 20.5,
+          },
+          undefined,
+          Object {
+            "color": "#9094A3",
+          },
+        ]
+      }
+    >
+      label
+    </Text>
+    <View />
+  </View>
+</View>
+`;
+
+exports[`BaseInput tests renders errors correctly 1`] = `
+<View
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <TextInput
+    allowFontScaling={false}
+    onChangeText={[Function]}
+    placeholder="placeholder"
+    rejectResponderTermination={true}
+    style={
+      Array [
+        Object {
+          "borderColor": "#D7D9E0",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "flex": 1,
+          "fontSize": 24,
+          "height": 68.5,
+          "paddingHorizontal": 24,
+        },
+        undefined,
+        Object {
+          "borderWidth": 1,
+        },
+        Object {
+          "borderColor": "#F56358",
+        },
+      ]
+    }
+    underlineColorAndroid="transparent"
+    value="value"
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "flexDirection": "row",
+        "height": 27.5,
+        "justifyContent": "space-between",
+        "marginStart": 24,
+        "paddingHorizontal": 6,
+        "position": "absolute",
+        "top": -13.5,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 24,
+            "letterSpacing": 0.6,
+            "lineHeight": 27.5,
+            "textAlign": "left",
+          },
+          undefined,
+          Object {
+            "color": "#9094A3",
+            "fontSize": 20.5,
+          },
+          undefined,
+          Object {
+            "color": "#F56358",
+          },
+        ]
+      }
+    >
+      label
+    </Text>
+    <View />
+  </View>
+  <Text
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontSize": 24,
+          "letterSpacing": 0.6,
+          "lineHeight": 27.5,
+          "textAlign": "left",
+        },
+        undefined,
+        Object {
+          "color": "#9094A3",
+          "fontSize": 20.5,
+        },
+        undefined,
+        Object {
+          "marginTop": 7,
+        },
+        Object {
+          "color": "#F56358",
+        },
+      ]
+    }
+  >
+    Error message
+  </Text>
+</View>
+`;

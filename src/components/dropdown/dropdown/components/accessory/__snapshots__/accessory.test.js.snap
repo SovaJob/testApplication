@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accessory tests renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "height": 41,
+      "justifyContent": "center",
+      "width": 48,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+        "height": 10.5,
+        "overflow": "hidden",
+        "width": 24,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "height": 13.5,
+            "transform": Array [
+              Object {
+                "translateY": -7,
+              },
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 16,
+          },
+          Object {
+            "backgroundColor": "red",
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;

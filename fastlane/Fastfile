@@ -1,0 +1,125 @@
+# Customize this file, documentation can be found here:
+# https://docs.fastlane.tools/actions/
+# All available actions: https://docs.fastlane.tools/actions
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "2.68.2"
+
+
+PROJECT_NAME = "rn_starter"
+
+# ENVS
+DEV_ENV     = "DEV"
+STAGE_ENV   = "STAGE"
+PREPROD_ENV = "PREPROD"
+PROD_ENV    = "PROD"
+
+# ANDROID GRADLE FLAVOR TASKS
+DEV_GRADLE_TASK     = "assembleDev"
+STAGE_GRADLE_TASK   = "assembleStage"
+PREPROD_GRADLE_TASK = "assemblePreprod"
+PROD_GRADLE_TASK    = "assembleProd"
+
+# ANDROID FLAVORS
+# DEV_FLAVOR      = "dev"
+# STAGE_FLAVOR    = "stage"
+# PREPROD_FLAVOR  = "preprod"
+# PROD_FLAVOR     = "prod"
+
+# IOS SCHEMES
+DEV_SCHEME      = "dev"
+STAGE_SCHEME    = "stage"
+PREPROD_SCHEME  = "preprod"
+PROD_SCHEME     = "prod"
+
+# IOS BUNDLE_IDS
+DEV_BUNDLE_ID     = "APP BUNDLE ID"
+STAGE_BUNDLE_ID   = "APP BUNDLE ID"
+PREPROD_BUNDLE_ID = "APP BUNDLE ID"
+PROD_BUNDLE_ID    = "APP BUNDLE ID"
+
+# IOS PROVISIONING PROFILES
+DEV_PROFILE     = "DEV PROVISIONING PROFILE NAME"
+STAGE_PROFILE   = "STAGE PROVISIONING PROFILE NAME"
+PREPROD_PROFILE = "PREPROD PROVISIONING PROFILE NAME"
+PROD_PROFILE    = "PROD PROVISIONING PROFILE NAME"
+
+
+def runIosBuild(env, scheme, profile, exportMethod)
+
+  increment_build_number(
+    build_number: Time.now.strftime("%Y%m%d%H%M"),
+    xcodeproj: "./ios/#{PROJECT_NAME}.xcodeproj",
+  )
+
+  build_app(
+    workspace: "./ios/#{PROJECT_NAME}.xcworkspace",
+    scheme: scheme,
+    export_method: exportMethod,
+    output_directory: "./builds/ios",
+    output_name: "#{PROJECT_NAME}-#{env}-#{Time.now.strftime("%Y%m%d%H%M")}",
+    export_options: {
+      iCloudContainerEnvironment: "Production",
+      provisioningProfiles: {
+        "#{PROD_BUNDLE_ID}": profile,
+      }
+    }
+  )
+end
+
+
+def runAndroidBuild(env, task)
+  gradle(
+    task: task,
+    project_dir: "android/",
+  )
+  sh "mkdir -p ../builds/android"
+  sh "mv #{Actions.lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH]} \
+  ../builds/android/#{PROJECT_NAME}-#{env}-#{Time.now.strftime("%Y%m%d%H%M")}.apk"
+end
+
+
+platform :ios do
+  lane :dev do
+    runIosBuild DEV_ENV, DEV_SCHEME, DEV_PROFILE, "development"
+  end
+
+  lane :stage do
+    runIosBuild STAGE_ENV, STAGE_SCHEME, STAGE_PROFILE, "ad-hoc"
+  end
+
+  lane :preprod do
+    runIosBuild PREPROD_ENV, PREPROD_SCHEME, PREPROD_PROFILE, "ad-hoc"
+  end
+
+  lane :prod do
+    runIosBuild PROD_ENV, PROD_SCHEME, PROD_PROFILE, "ad-hoc"
+  end
+end
+
+
+platform :android do
+  lane :dev do
+    runAndroidBuild DEV_ENV, DEV_GRADLE_TASK
+  end
+
+  lane :stage do
+    runAndroidBuild STAGE_ENV, STAGE_GRADLE_TASK
+  end
+
+  lane :preprod do
+    runAndroidBuild PREPROD_ENV, PREPROD_GRADLE_TASK
+  end
+
+  lane :prod do
+    runAndroidBuild PROD_ENV, PROD_GRADLE_TASK
+  end
+end

@@ -1,0 +1,25 @@
+{
+  "editor.tabSize": 2,
+  "breadcrumbs.enabled": true,
+  
+  // FLOW
+  "javascript.validate.enable": false,
+  "flow.useLSP": true,
+  "flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow",
+  "flow.showUncovered": false,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": true
+  },
+  "markdownlint.config": {
+    "MD024": { "siblings_only": true }
+  },
+
+  // SPELL
+  "cSpell.words": [
+    "CRASHLYTICS",
+    "gradlew",
+    "preproduction"
+  ],
+  "compile-hero.disable-compile-files-on-did-save-code": false
+}

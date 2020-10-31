@@ -1,0 +1,21 @@
+{
+  "common": {
+    "helloWorld": "Hello world",
+    "languages": {
+      "en": "en",
+      "ru": "ru"
+    },
+    "cancel": "Cancel",
+    "save": "Save",
+    "back": "GoBack"
+  },
+  "languagesLabels": {
+    "en": "English",
+    "ru": "Russian"
+  },
+  "main": {
+    "header_title": "AVAILABILITIES",
+    "filter_availabilities": "Availabilities",
+    "filter_preferences": "Preferences"
+  }
+}

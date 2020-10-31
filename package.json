@@ -1,0 +1,103 @@
+{
+  "name": "rn_starter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "android:run-dev": "react-native run-android --variant=devDebug",
+    "android:run-stage": "react-native run-android --variant=stageDebug",
+    "android:run-preprod": "react-native run-android --variant=preprodDebug",
+    "android:run-prod": "react-native run-android --variant=prodDebug",
+    "android:build-dev": "cd android && ./gradlew assembleDev",
+    "android:build-stage": "cd android && ./gradlew assembleStage",
+    "android:build-preprod": "cd android && ./gradlew assemblePreprod",
+    "android:build-prod": "cd android && ./gradlew assembleProd",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "test-coverage": "jest --coverage",
+    "test-update": "jest -u",
+    "lint": "eslint .",
+    "flow": "node_modules/.bin/flow",
+    "pod:install": "npx pod-install"
+  },
+  "dependencies": {
+    "@expo/react-native-action-sheet": "^3.6.0",
+    "@react-native-community/async-storage": "^1.12.1",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-native-community/netinfo": "^5.9.1",
+    "@react-native-community/toolbar-android": "^0.1.0-rc.2",
+    "@react-navigation/native": "^5.7.6",
+    "@react-navigation/stack": "^5.9.3",
+    "axios": "^0.19.0",
+    "i18next": "^19.0.1",
+    "mobx": "5.15.0",
+    "mobx-persist": "^0.4.1",
+    "mobx-react": "6.1.4",
+    "moment": "^2.24.0",
+    "qs": "^6.9.1",
+    "react": "16.13.1",
+    "react-i18next": "^11.2.5",
+    "react-native": "0.63.3",
+    "react-native-config": "^0.12.0",
+    "react-native-fast-image": "7.0.2",
+    "react-native-gesture-handler": "^1.8.0",
+    "react-native-image-crop-picker": "^0.26.1",
+    "react-native-iphone-x-helper": "^1.2.1",
+    "react-native-reanimated": "^1.13.1",
+    "react-native-safe-area-context": "^3.1.8",
+    "react-native-screens": "^2.11.0",
+    "react-native-splash-screen": "^3.2.0",
+    "react-native-vector-icons": "^6.6.0",
+    "react-navigation": "^4.0.10",
+    "react-navigation-animated-switch": "^0.3.2",
+    "react-navigation-stack": "^1.10.3",
+    "react-navigation-tabs": "^2.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^25.1.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "eslint-plugin-flowtype": "^4.5.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-native": "^3.8.1",
+    "flow-bin": "0.122.0",
+    "husky": "^3.1.0",
+    "jest": "^25.1.0",
+    "jest-enzyme": "^7.1.2",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-dom": "16.13.1",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFiles": [
+      "./__tests__/setup_tests.js"
+    ],
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "./__tests__/setup_after_env.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "./__tests__"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn flow && yarn lint && yarn test",
+      "pre-push": "yarn flow && yarn lint && yarn test"
+    }
+  }
+}

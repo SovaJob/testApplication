@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox tests renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "justifyContent": "flex-start",
+    }
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D7D9E0",
+        "borderRadius": 4,
+        "borderWidth": 2,
+        "height": 34.5,
+        "justifyContent": "center",
+        "width": 40,
+      }
+    }
+  />
+  <Text
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontSize": 24,
+          "letterSpacing": 0.6,
+          "lineHeight": 27.5,
+          "textAlign": "left",
+        },
+        undefined,
+        Object {
+          "color": "#2F323D",
+          "fontSize": 24,
+          "marginStart": 16,
+        },
+      ]
+    }
+  >
+    login:show_password
+  </Text>
+</View>
+`;
+
+exports[`Checkbox tests renders correctly when checked 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "justifyContent": "flex-start",
+    }
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D7D9E0",
+        "borderRadius": 4,
+        "borderWidth": 2,
+        "height": 34.5,
+        "justifyContent": "center",
+        "width": 40,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#D7D9E0",
+            "fontSize": 16,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <Text
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontSize": 24,
+          "letterSpacing": 0.6,
+          "lineHeight": 27.5,
+          "textAlign": "left",
+        },
+        undefined,
+        Object {
+          "color": "#2F323D",
+          "fontSize": 24,
+          "marginStart": 16,
+        },
+      ]
+    }
+  >
+    login:show_password
+  </Text>
+</View>
+`;

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderRightTape tests renders correctly 1`] = `null`;
+
+exports[`HeaderRightTape tests renders null when isn't visible 1`] = `null`;
+
+exports[`HeaderRightTape tests with dev env renders correctly 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FF0000",
+      "height": 34.5,
+      "marginRight": -60,
+      "marginTop": 85.5,
+      "opacity": 1,
+      "position": "absolute",
+      "right": 0,
+      "transform": Array [
+        Object {
+          "rotate": "45deg",
+        },
+      ],
+      "width": 300,
+    }
+  }
+  testID="headerRightTape"
+>
+  <Text
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    numberOfLines={2}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontSize": 24,
+          "letterSpacing": 0.6,
+          "lineHeight": 27.5,
+          "textAlign": "left",
+        },
+        undefined,
+        Object {
+          "color": "#FFFFFF",
+          "fontSize": 17,
+          "fontWeight": "900",
+          "lineHeight": 27.5,
+        },
+      ]
+    }
+  >
+    dev
+29.11.19 16-30
+  </Text>
+</View>
+`;

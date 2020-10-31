@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button tests renders content as null when no children and no text are provided 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#676B7A",
+      "borderRadius": 4,
+      "height": 68.5,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": "100%",
+    }
+  }
+  testID="button"
+/>
+`;
+
+exports[`Button tests renders correctly 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#676B7A",
+      "borderRadius": 4,
+      "height": 68.5,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": "100%",
+    }
+  }
+  testID="button"
+>
+  <Text
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontSize": 24,
+          "letterSpacing": 0.6,
+          "lineHeight": 27.5,
+          "textAlign": "left",
+        },
+        undefined,
+        Object {
+          "color": "#FFFFFF",
+          "fontSize": 24,
+          "fontWeight": "500",
+        },
+        Object {
+          "color": "#FFFFFF",
+        },
+      ]
+    }
+  >
+    forgot_password:btn_reset_password
+  </Text>
+</View>
+`;
+
+exports[`Button tests renders correctly when disabled and reversed 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#676B7A",
+      "borderRadius": 4,
+      "borderWidth": 2,
+      "height": 68.5,
+      "justifyContent": "center",
+      "opacity": 0.2,
+      "width": "100%",
+    }
+  }
+  testID="button"
+>
+  <Text
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontSize": 24,
+          "letterSpacing": 0.6,
+          "lineHeight": 27.5,
+          "textAlign": "left",
+        },
+        undefined,
+        Object {
+          "color": "#FFFFFF",
+          "fontSize": 24,
+          "fontWeight": "500",
+        },
+        Object {
+          "color": "#676B7A",
+        },
+      ]
+    }
+  >
+    forgot_password:btn_reset_password
+  </Text>
+</View>
+`;
+
+exports[`Button tests renders correctly with child 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#676B7A",
+      "borderRadius": 4,
+      "height": 68.5,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": "100%",
+    }
+  }
+  testID="button"
+>
+  Test button text
+</View>
+`;
