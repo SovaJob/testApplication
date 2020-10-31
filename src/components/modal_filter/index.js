@@ -93,7 +93,12 @@ export default inject(injected)(
           <OptionItem onPress={onItemPress} itemTextKey="main:filter_availabilities" selectedItemText={filterValue} />
           <OptionItem onPress={onItemPress} itemTextKey="main:filter_preferences" selectedItemText={filterValue} />
 
-          <TouchableOpacity style={styles.cancelButton}>
+          <TouchableOpacity
+            style={styles.cancelButton}
+            onPress={() => {
+              setModalVisible(false);
+            }}
+          >
             <BaseText style={styles.cancelText} textKey="common:cancel" />
           </TouchableOpacity>
         </Animated.View>
