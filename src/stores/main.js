@@ -8,7 +8,7 @@ import type { _t_filter_value } from "src/types";
 export default class MainStore {
   @observable filterValue: _t_filter_value = "Availabilities";
 
-  @observable modalVisible: boolean = false;
+  @observable modalVisible: boolean = true; // false
 
   // ===================
   // ===== ACTIONS =====

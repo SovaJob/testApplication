@@ -16,13 +16,16 @@ type _t_props = {|
 |};
 
 export default (props: _t_props) => {
-  const { onPress, itemTextKey, selectedItemText } = props;
+  const {
+    onPress, itemTextKey, selectedItemText, ...restProps
+  } = props;
   return (
     <TouchableOpacity
       style={[styles.filterItem, selectedItemText === i18n.t(itemTextKey) && styles.selectedButton]}
       onPress={() => {
         onPress(itemTextKey);
       }}
+      {...restProps}
     >
       <BaseText
         style={[styles.filterText, selectedItemText === i18n.t(itemTextKey) && styles.selectedText]}
