@@ -24,6 +24,7 @@ export default StyleSheet.create({
     bottom: 0,
     flexDirection: "column",
     justifyContent: "flex-end",
+    maxHeight: getHeightWithScaleFactor(630),
 
     backgroundColor: COLORS.WHITE,
     width: getWidthWithScaleFactor(375),
